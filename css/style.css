@@ -2,18 +2,41 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body {
   background-color: #04A0C6;
-  font-family: sans-serif;
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
   text-align: center;
-  font-size: 18px;
-  line-height: 3em;
+  font-size: 14px;
+  line-height: 1.5em;
   width: 360px;
 }
 
-.container {
+.top {
   background-color: #04A0C6;
 }
+
+div {
+    text-align: left;
+    letter-spacing: 0;
+  }
+
+.container {
+  padding: 0px;
+}
+
+form {
+  border: 0px;
+  position: absolute;
+  width: 257px;
+  height: 211px;
+  left: 55px;
+  top: 369px;
+}
+
 
 .logotype {
   background-color: #04A0C6;
@@ -33,28 +56,32 @@ body {
   top: 174px;
 }
 
-.sign_in {
-  background-color: #04A0C6;
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 100px;
+  margin-bottom: 6px;
+  display: inline-block;
+  border: 0px;
+  box-sizing: border-box;
 }
 
-
-P {
-  font-family: Montserrat;
-  font-style: normal;
+button {
+  background-color: #B3CC95;
+  color: #020202;
   font-weight: 600;
-  font-size: 14px;
-  line-height: normal;
-  text-align: center;
-  letter-spacing: -0.02em;
+  border-radius: 100px;
+  padding: 12px 10px;
+  margin: 16px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 }
 
-.input_type {
-  color: #ffffff;
+button:hover {
+    background-color: #DDDEA8;
 }
 
-div {
-    text-align: left;
-    letter-spacing: 0;
-    height:61px;
-    padding: 10px 10px;
-  }
+span.psw {
+  float: right;
+}

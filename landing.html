@@ -8,10 +8,11 @@
   </head>
 
   <body>
-    <section class="container">
+    <section class="top">
       <img class="status" src="images/StatusBar.png">
    </section>
 
+<div class="container">
    <section class="logotype">
      <img src="images/logotype.png">
    </section>
@@ -20,10 +21,18 @@
      <img src="images/logo.png">
    </section>
 
-   <section class="sign_in">
-     <p class="input_type">username</p>
-   </section>
+   <form action="action_page.php">
+       <label for="uname"><b>Username</b></label>
+       <input type="text"  name="uname" required>
 
+       <label for="psw"><b>Password</b></label>
+       <input type="password"  name="psw" required>
+
+       <button type="submit">Sign in</button>
+
+      <span class="psw"><a href="forgot.html">Forgot password?</a></span>
+     </form>
+ </div>
 
 
 
