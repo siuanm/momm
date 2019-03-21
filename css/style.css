@@ -1,0 +1,60 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #04A0C6;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 18px;
+  line-height: 3em;
+  width: 360px;
+}
+
+.container {
+  background-color: #04A0C6;
+}
+
+.logotype {
+  background-color: #04A0C6;
+  position: absolute;
+  width: 214px;
+  height: 137px;
+  left: 73px;
+  top: 26px;
+}
+
+.logo {
+  background-color: #04A0C6;
+  position: absolute;
+  width: 257px;
+  height: 185px;
+  left: 46px;
+  top: 174px;
+}
+
+.sign_in {
+  background-color: #04A0C6;
+}
+
+
+P {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.input_type {
+  color: #ffffff;
+}
+
+div {
+    text-align: left;
+    letter-spacing: 0;
+    height:61px;
+    padding: 10px 10px;
+  }
