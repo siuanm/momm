@@ -6,6 +6,7 @@ html {
   font-size: 10px;
 }
 
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
@@ -17,9 +18,10 @@ body {
   font-size: 1.4rem;
   line-height: normal;
   letter-spacing: -0.02em;
-  width: 36rem;
+  width: 36em;
   height: 64rem;
 }
+
 
 .top {
   background-color: #04A0C6;
