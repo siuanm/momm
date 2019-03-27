@@ -27,31 +27,30 @@ body {
   width: 100%;
 }
 
-.logotype {
-  background-color: #04A0C6;
-  grid-area: logotype;
-}
+div {
+    text-align: left;
+    letter-spacing: 0;
+  }
 
-.logo {
-  background-color: #04A0C6;
-  grid-area: logo;
+.container {
+  margin: auto;
+  width: 360px;
+  padding: 0px;
 }
 
 img {
   display: block;
-
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 img.status {
   display: inline;
-  height: 100%;
-}
-
-.main {
-  background-color: #04A0C6;
-  justify-content: center;
-  text-align: left;
-  grid-area: main;
+  margin: 0;
+  height: 24px;
+  width: 360px;
+  float: right;
 }
 
 form {
@@ -60,11 +59,24 @@ form {
   height: 21.1rem;
 }
 
+.logotype {
+  background-color: #04A0C6;
+  width: 21.4rem;
+  height: 13.7rem;
+}
+
+.logo {
+  background-color: #04A0C6;
+  width: 25.7rem;
+  height: 18.5rem;
+}
+
 input[type=text], input[type=password] {
   width: 100%;
   padding: .8rem 1rem;
   border-radius: 10rem;
   margin-bottom: .6rem;
+  display: inline-block;
   border: 0px;
   box-sizing: border-box;
 }
@@ -103,15 +115,4 @@ a {
 
 a:hover {
     color: #ffffff;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 24vh 30vh 35vh auto;
-  grid-template-areas:
-    ". logotype ."
-    ". logo ."
-    ". main ."
-    ". . ."  ;
 }
