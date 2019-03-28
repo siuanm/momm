@@ -11,56 +11,56 @@ html {
 
 body {
   background-color: #04A0C6;
-  color: #ffffff;
+  color: #979797;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  text-align: center;
   font-size: 1.4rem;
   line-height: normal;
   letter-spacing: -0.02em;
 }
 
+p {
+    justify-content: right;
+}
 
-.logotype {
+.nav {
   background-color: #04A0C6;
-  grid-area: logotype;
+  grid-area: nav;
 }
 
-.logo {
+.top {
   background-color: #04A0C6;
-  grid-area: logo;
-}
-
-img {
-  display: block;
-  justify-content: center;
-}
-
-img.status {
-  display: inline;
-  height: 100%;
+  grid-area: top;
 }
 
 .main {
-  background-color: #04A0C6;
+  background-color: #f3f3f3;
+  border-radius: 1rem;
   text-align: left;
   grid-area: main;
 }
 
-form {
-  border: 0px;
-  padding-top: 1rem;
-  width: 25.7rem;
-  height: 21.1rem;
+.bottom {
+  background-color: #04A0C6;
+  grid-area: bottom;
 }
 
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: .8rem 1rem;
-  border-radius: 10rem;
-  margin-bottom: .6rem;
+form {
+  color: #020202;
+  display: grid;
   border: 0px;
-  box-sizing: border-box;
+  margin: 2px auto;
+  padding: 1rem 0;
+  width: 25.7rem;
+  height: 20.1rem;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: .1rem 2rem;
+  margin-bottom: .4rem;
+  border: 1px solid #979797;
+  border-radius: 2rem;
 }
 
 button {
@@ -68,8 +68,8 @@ button {
   color: #020202;
   font-weight: 600;
   border-radius: 10rem;
-  padding: 1.2rem 1rem;
-  margin: 1.6rem 0;
+  padding: .2rem 1rem;
+  margin: 1rem 0;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -79,33 +79,33 @@ button:hover {
     background-color: #DDDEA8;
 }
 
-span.psw {
+span.prompt {
   float: right;
 }
 
-a {
-  color: #DDDEA8;
-  font-weight: 500;
+h1 {
+  color: #020202;
+  font-weight: 600;
   font-size: 1.4rem;
   font-style: none;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   line-height: 1.3rem;
-  margin-top: 1rem;
-  justify-content: right;
+  margin: 1rem 0 2rem 0;
+  float: right;
 }
 
-a:hover {
-    color: #ffffff;
+img {
+  padding: 2rem;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 150px 185px 221px auto;
+  grid-template-rows: 40px 180px 215px auto;
   grid-template-areas:
-    ". logotype ."
-    ". logo ."
+    "nav nav ."
+    ". top ."
     ". main ."
-    ". . ."  ;
-}
+    ". bottom ."
+  }
