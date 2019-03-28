@@ -38,6 +38,7 @@ body {
 }
 
 img {
+  width: 100%;
   justify-content: center;
 }
 
@@ -79,8 +80,8 @@ a:hover {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 398px 120px 1px 50px;
+  grid-template-columns: 5rem 25.7rem 5rem;
+  grid-template-rows: 350px 120px 1px 50px;
   grid-template-areas:
     ". animation ."
     ". message ."
