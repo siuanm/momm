@@ -27,47 +27,38 @@ body {
   width: 100%;
 }
 
-div {
-    text-align: left;
-    letter-spacing: 0;
-  }
-
-.container {
-  margin: auto;
-  width: 360px;
-  padding: 0px;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-img.status {
-  display: inline;
-  margin: 0;
-  height: 24px;
-  width: 360px;
-}
-
-form {
-  border: 0px;
-  width: 25.7rem;
-  height: 21.1rem;
-}
-
 .logotype {
   background-color: #04A0C6;
-  width: 21.4rem;
-  height: 13.7rem;
+  grid-area: logotype;
 }
 
 .logo {
   background-color: #04A0C6;
+  grid-area: logo;
+}
+
+img {
+  display: block;
+  justify-content: center;
+}
+
+img.status {
+  display: inline;
+  height: 100%;
+}
+
+.main {
+  background-color: #04A0C6;
+  justify-content: center;
+  text-align: left;
+  grid-area: main;
+}
+
+form {
+  border: 0px;
+  padding-top: 1rem;
   width: 25.7rem;
-  height: 18.5rem;
+  height: 21.1rem;
 }
 
 input[type=text], input[type=password] {
@@ -75,7 +66,6 @@ input[type=text], input[type=password] {
   padding: .8rem 1rem;
   border-radius: 10rem;
   margin-bottom: .6rem;
-  display: inline-block;
   border: 0px;
   box-sizing: border-box;
 }
@@ -114,4 +104,15 @@ a {
 
 a:hover {
     color: #ffffff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 150px 185px 221px auto;
+  grid-template-areas:
+    ". logotype ."
+    ". logo ."
+    ". main ."
+    ". . ."  ;
 }
