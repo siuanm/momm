@@ -30,23 +30,64 @@ ion-icon {
   grid-area: nav;
 }
 
-.top {
-  grid-area: top;
-}
-
 .main {
-  border-radius: 1rem;
+  background-color: #FDFFFB;
+  border-radius: .2rem;
+  margin-top: 8px;
+  margin-bottom: 4px;
   text-align: left;
   grid-area: main;
 }
 
-.bottom {
-  grid-area: bottom;
+.current {
+  background-color: #FCF8E8;
+  border-radius: .2rem;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-align: left;
+  grid-area: current;
+}
+
+.completed {
+  background-color: #E3F4CF;
+  border-radius: .2rem;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-align: left;
+  grid-area: completed;
 }
 
 p {
     justify-content: right;
 }
+
+.mainDetails {
+  position: relative;
+  padding: 1rem;
+  float:left:
+  height: 120px;
+  width: 300px;
+}
+.mainDetails p {
+  position: absolute;
+  bottom: 0;
+}
+
+.money {
+  color: #020202;
+  padding: 1.4rem;
+  font-weight: 600;
+  font-size: 3.6rem;
+}
+
+.message {
+  color: #037A96;
+  padding: 2.4rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  float: right;
+}
+
 
 h1 {
   font-weight: 600;
@@ -59,18 +100,31 @@ h1 {
   float: right;
 }
 
+
+
 img {
   height: 100%;
   padding: 2rem;
 }
 
+#wrapper{
+  width: 400px;
+  height: 400px;
+}
+
+#meter{
+  width: 100%;
+  height: 100%;
+  transform: rotateX(180deg);
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: 5rem 29rem 5rem;
-  grid-template-rows: 85px 180px 215px auto;
+  grid-template-columns: .8rem 29rem .8rem;
+  grid-template-rows: 65px 198px 198px 120px;
   grid-template-areas:
     "nav nav ."
-    ". top ."
     ". main ."
-    ". bottom ."
+    ". current ."
+    ". completed ."
   }

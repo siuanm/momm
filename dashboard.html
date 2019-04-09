@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="css/style_dashboard.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
+
   <body>
-
-
 
 <div class="grid-container">
   <section class="nav">
@@ -16,19 +15,36 @@
       <a href="index.html"> <ion-icon name="more"></ion-icon></a>
      </section>
 
-   <section class="top">
-    <p> &nbsp;
-   </section>
+
 
      <section class="main">
+       <div class="mainDetails"
+        <p><Span class="money">$150</span>
+          <span class="message">Well Done!</span></p>
+        </div>
+
+
+           <div id="wrapper">
+             <svg id="meter">
+               <circle id="low" r="80" cx="140" cy="312" stroke="#DC552B" stroke-width="6" stroke-dasharray="251, 502" fill="none">
+               </circle>
+               <circle id="avg" r="80" cx="140" cy="312" stroke="#FEA488" stroke-width="6" stroke-dasharray="175, 502" fill="none"></circle>
+             </svg>
+           </div>
+
 
     </section>
 
-    <section class="bottom">
+    <section class="current">
       <p> &nbsp;
     </section>
 
+    <section class="completed">
+      <p> &nbsp;
+    </section>
  </div>
-<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
+   <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
   </body>
+
 </html>
