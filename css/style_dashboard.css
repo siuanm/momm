@@ -22,8 +22,8 @@ body {
 ion-icon {
   color: #010101;
   font-size: 24px;
+  padding-top: 1.8rem;
   float: right;
-  padding: 25px;
 }
 
 .nav {
@@ -32,6 +32,7 @@ ion-icon {
 
 .main {
   background-color: #FDFFFB;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: .2rem;
   margin-top: 8px;
   margin-bottom: 4px;
@@ -41,6 +42,7 @@ ion-icon {
 
 .current {
   background-color: #FCF8E8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: .2rem;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -50,6 +52,7 @@ ion-icon {
 
 .completed {
   background-color: #E3F4CF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: .2rem;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -57,15 +60,10 @@ ion-icon {
   grid-area: completed;
 }
 
-p {
-    justify-content: right;
-}
-
 .mainDetails {
   position: relative;
   padding: 1rem;
-  float:left:
-  height: 120px;
+  height: 60px;
   width: 300px;
 }
 .mainDetails p {
@@ -88,7 +86,6 @@ p {
   float: right;
 }
 
-
 h1 {
   font-weight: 600;
   font-size: 1.4rem;
@@ -100,11 +97,9 @@ h1 {
   float: right;
 }
 
-
-
 img {
   height: 100%;
-  padding: 2rem;
+  padding: 1.2rem;
 }
 
 #wrapper{
@@ -121,7 +116,7 @@ img {
 .grid-container {
   display: grid;
   grid-template-columns: .8rem 29rem .8rem;
-  grid-template-rows: 65px 198px 198px 120px;
+  grid-template-rows: 60px 198px 198px 120px;
   grid-template-areas:
     "nav nav ."
     ". main ."
