@@ -4,6 +4,8 @@
     <title>Money on my Mind</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style_dashboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
@@ -11,23 +13,26 @@
 
 <div class="grid-container">
   <section class="nav">
-       <img src="images/FinancialFuturesLogo.jpg">
-      <a href="index.html"> <ion-icon name="more"></ion-icon></a>
+       <img class="logo" src="images/FinancialFuturesLogo.jpg">
+      <a href="index.html"> <ion-icon name="more" class="ellipsis"></ion-icon></a>
      </section>
 
 
 
      <section class="main">
-       <div class="mainDetails">
-        <p><Span class="money">$150</span>
-          <span class="message">Well Done!</span></p>
-        </div>
+         <UL class="amount">
+           <LI><Span class="money">$150</span>
+           <LI><span class="message">Well Done!</span>
+         </UL>
+        <P class="start_amt">$0</p>
+
+        <P class="end_amt">$500</p>
 
            <div id="wrapper">
              <svg id="meter">
-               <circle id="low" r="80" cx="140" cy="312" stroke="#DC552B" stroke-width="6" stroke-dasharray="251, 502" fill="none">
+               <circle id="low" r="72" cx="113" cy="323" stroke="#DC552B" stroke-width="6" stroke-dasharray="226, 452" fill="none">
                </circle>
-               <circle id="avg" r="80" cx="140" cy="312" stroke="#FEA488" stroke-width="6" stroke-dasharray="175, 502" fill="none"></circle>
+               <circle id="avg" r="72" cx="113" cy="323" stroke="#FEA488" stroke-width="6" stroke-dasharray="175, 452" fill="none"></circle>
              </svg>
            </div>
 
@@ -37,12 +42,22 @@
       <p class="current_title"> current goals:</p>
       <P><span class="red">Next goal in the sequence</span><br>
         some important detail</p>
+    <P>&nbsp;<br>  <form>
+      <select id="reminder" name="time">
+      <option value="1">tomorrow</option>
+      <option value="3">in 3 days</option>
+      <option value="7">in 1 week</option>
+      <option value="c">custom</option>
+      </select>
+    </form>
+        <!--<i class="material-icons current">keyboard_arrow_down</i>-->
     </section>
 
     <section class="completed">
-      <p class="completed_title"> completed goals:</p>
+      <p class="completed_title"> completed:</p>
       <P><span class="red">Next goal in the sequence</span><br>
         some important detail</p>
+      <i class="material-icons complete">keyboard_arrow_down</i>
     </section>
  </div>
 
