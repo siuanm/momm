@@ -157,7 +157,7 @@ line-height: normal;
 }
 
 
-.material-icons.complete {
+.material-icons.first {
   font-size: 24px;
   position: absolute;
   left: 273px;
@@ -168,7 +168,7 @@ line-height: normal;
   background-color: #DDDEA8;
 }
 
-.material-icons.complete:hover {
+.material-icons.first:hover {
   font-size: 24px;
   position: absolute;
   left: 269px;
