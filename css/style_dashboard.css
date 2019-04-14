@@ -207,7 +207,7 @@ label {
   margin-left: 22px;
 }
 
-button {
+button.btn {
   padding: 5px 7px;
   border: 1px solid #DC552B;
   border-radius: 4px;
@@ -215,7 +215,7 @@ button {
   color: #ffffff;
 }
 
-button:hover {
+button.btn:hover {
   background-color: #DC552B;
 }
 
