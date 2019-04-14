@@ -183,11 +183,22 @@ line-height: normal;
   font-size: 24px;
   position: absolute;
   left: 273px;
-  top: 477px;
+  top: 487px;
   width: 30px;
   height: 30px;
   border-radius: 100px;
-  background-color: #DDDEA8;
+  background-color: #B3CC95;
+}
+
+.material-icons.second:hover {
+  font-size: 24px;
+  position: absolute;
+  left: 269px;
+  top: 483px;
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+  background-color: #B3CC95;
 }
 
 select {
